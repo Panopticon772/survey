@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Survey Form</title>
+    <meta name="" content="">
+    <meta name="" content="">
+
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header id="title-box">
+        <div id="title-box-text">
+            <h1 id="title">Atlanta Pet Rescue</h1>
+            <p id="description">Thank you for inquiring about being an APR volunteer!</p>
+        </div>
+    </header>
+    <main id="main">
+        <form id="survey-form">
+            <div id="name-box">
+                <label id="name-label" for="name">Name:</label>
+                <input type="text" name="name" id="name" class="form-input box-styling" placeholder="Enter your name"
+                    required>
+            </div>
+            <div id="email-box">
+                <label id="email-label" for="email">Email:</label>
+                <input type="email" name="email" id="email" class="form-input box-styling"
+                    placeholder="Enter your email" required>
+            </div>
+            <div id="age-box">
+                <label id="number-label" for="age">Age:</label>
+                <input type="number" name="age" id="number" class="form-input box-styling" min="18" max="75"
+                    placeholder="Age" required>
+            </div>
+
+            <label class="sm-mg" for="dropdown">What is your level of experience with
+                animals?</label>
+            <select name="dropdown" id="dropdown" class="sm-b-mg">
+                <option value="Beginner">Beginner</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Advanced">Advanced</option>
+            </select>
+            <p class="sm-mg">In addition to volunteering, would you consider adopting an animal?</p>
+            <div>
+                <input type="radio" name="adopt" value="yes">
+                <label for="Yes">Yes</label>
+                <input type="radio" name="adopt" value="no" class="sm-l-mg">
+                <label for="No">No</label>
+                <input type="radio" name="adopt" value="not sure" class="sm-l-mg">
+                <label for="Not Sure">Not sure</label>
+            </div>
+            <p class="sm-mg">Which types of volunteering are you interested in?</p>
+            <div>
+                <input type="checkbox" name="dogs" value="dogs">
+                <label for="dogs">Dogs</label>
+                <input type="checkbox" name="cats" value="cats" class="sm-l-mg">
+                <label for="cats">Cats</label>
+                <input type="checkbox" name="reptiles" value="reptiles" class="sm-l-mg">
+                <label for="reptiles">Reptiles</label>
+                <input type="checkbox" name="fish" value="fish" class="sm-l-mg">
+                <label for="fish">Fish</label>
+            </div>
+            <label for="comments" class="sm-mg">Explain in a few sentences why you want to volunteer:</label>
+            <textarea name="comments" class="sm-mg"></textarea>
+            <input id="submit" type="submit" value="Submit form">
+        </form>
+    </main>
+    <footer>
+        <p id="footer-text">Coded by Chris Stepowski</p>
+    </footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
